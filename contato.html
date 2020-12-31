@@ -24,21 +24,21 @@
     <main>
         <form action="">
             <label for="nomesobreme">Nome e sobrenome:</label>
-            <input type="text"  class="input-padrao">
+            <input type="text"  class="input-padrao" required>
 
             <label for="email">E-mail:</label>
-            <input type="email"  class="input-padrao">
+            <input type="email"  class="input-padrao" required placeholder="seuemail@dominio.com">
 
-            <label for="telofone">Telofone:</label>
-            <input type="tel"  class="input-padrao">
+            <label for="telefone">Telofone:</label>
+            <input type="tel"  class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
 
             <label for="mensagem">Mensagem:</label>
             <Textarea cols="70" rows="10" id="mensagem" class="input-padrao"></Textarea>
-            <div>
-                <p>Como prefere o nosso contato?</p>
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
 
                 <label for="radio-email">
-                <input type="radio" name="contato"  value="email" id="radio-email">
+                <input type="radio" name="contato"  value="email" id="radio-email" checked>
                 Email
                 </label>
 
@@ -51,10 +51,10 @@
                 <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
                 WhatsApp
                 </label>
-            </div>
+            </fieldset>
 
 
-            <div>
+            <fieldset>
                 <p>horário prefere ser atendido?</p> 
                 <select>
                     <option>Manhâ</option>
@@ -65,12 +65,12 @@
 
             <div>
                 <label class="checkbox">
-                    <input type="checkbox">
+                    <input type="checkbox" checked>
                     Gostaria de receber nossas novidades por email?
                 </label>
-            </div>
+            </fieldset>
 
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" class="enviar">
             
         </form>
     </main>
